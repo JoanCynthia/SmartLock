@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".GenerateOTP">
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Scan QR Code"-->
+        <!--android:id="@+id/btn_barcode"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/button"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:textSize="30sp"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="Generate OTP"-->
+        <!--android:id="@+id/otp"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="@drawable/button"-->
+        <!--android:textColor="#fff"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:textSize="30sp"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:id="@+id/setotp"-->
+        <!--android:hint="OTP"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="30sp"-->
+        <!--android:textColor="#000"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="40dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--tools:ignore="InvalidId" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/resendotp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="@string/resend_otp"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textColor="#01DA00"/>-->
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/pbar"
+        android:visibility="invisible"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bike"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+            android:layout_gravity="center"
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:src="@drawable/lock_2"
+            android:id="@+id/lock"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="match_parent"
+            app:civ_border_color="#FFFFFF"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/unlock"
+            android:layout_gravity="center"
+            android:src="@drawable/unlock_2"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:civ_border_color="#FFFFFF"/>
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bike Back Seat"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_gravity="center"
+            android:src="@drawable/lock_2"
+            android:id="@+id/lockBackSeat"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:visibility="visible"
+            android:layout_height="match_parent"
+            app:civ_border_color="#FFFFFF"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/unlockBackSeat"
+            android:layout_gravity="center"
+            android:src="@drawable/unlock_2"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="30dp"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:civ_border_color="#FFFFFF"/>
+
+    </FrameLayout>
+
+</LinearLayout>
